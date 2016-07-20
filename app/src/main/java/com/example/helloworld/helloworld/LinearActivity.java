@@ -5,17 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class LinearActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); //inflate XML to Android display
+        setContentView(R.layout.activity_linear);
     }
-
-    public void doMagic(View view) {
-        System.out.println("Hello world!!");
-        Intent intent = new Intent(this, LinearActivity.class);
+    public void doMain(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
